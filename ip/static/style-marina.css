@@ -1,0 +1,70 @@
+/* General styling */
+body {
+    background: linear-gradient(135deg, #4a148c, #d500f9);  /* Gradient background */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #2c003e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ff8c94;  /* Soft pink for active link */
+}
+
+/* Parking Section */
+.parking-section {
+    margin-top: 100px;  /* Space below the navbar */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 90px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Slot Buttons */
+.btn-success {
+    background-color: #4caf50;  /* Green for available */
+    border: none;
+}
+
+.btn-danger {
+    background-color: #f44336;  /* Red for occupied */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #388e3c;  /* Darker green on hover */
+}
+
+.btn-danger:hover {
+    background-color: #d32f2f;  /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-md-3 {
+        width: 100%;  /* Stack slots on smaller screens */
+    }
+}

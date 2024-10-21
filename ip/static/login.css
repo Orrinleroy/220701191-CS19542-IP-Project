@@ -1,0 +1,91 @@
+/* login.css */
+
+/* General styling */
+body {
+    background: linear-gradient(135deg, #ff0066, #7400b8); /* Gradient background */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+  /* Navbar */
+  .navbar {
+    background-color: #2c003e; /* Dark purple for navbar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #ff8c94; /* Highlight active link in soft red-pink */
+  }
+  
+  /* Login Section */
+  .login-section {
+    margin-top: 100px; /* Ensure form is below navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust height to account for navbar */
+  }
+  
+  .login-box {
+    background-color: #3e0066; /* Dark purple form background */
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ff8c94; /* Soft pink borders for input fields */
+  }
+  
+  .form-control::placeholder {
+    color: #ffb6c1; /* Lighter pink placeholder */
+  }
+  
+  .btn-primary {
+    background-color: #ff8c94; /* Soft pink button */
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff0055; /* Darker hover state */
+  }
+  
+  .mb-3 label {
+    color: #fff;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .login-box {
+      width: 90%;
+    }
+  }

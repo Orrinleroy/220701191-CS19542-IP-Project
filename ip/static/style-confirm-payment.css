@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    background: linear-gradient(135deg, #ff0066, #7400b8); /* Gradient background */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #7400b8; /* Match brand color */
+}
+
+.navbar-nav .nav-link {
+    color: #7400b8; /* Match link color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff0066; /* Change link color on hover */
+}
+
+/* Confirm Section Styles */
+.confirm-section {
+    min-height: 100vh; /* Ensures the section takes full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adding some padding */
+}
+
+.confirm-box {
+    background-color: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Card shadow for depth */
+    padding: 30px; /* Padding inside the card */
+    width: 100%;
+    max-width: 500px; /* Limiting the width for better responsiveness */
+}
+
+h2 {
+    margin-bottom: 20px; /* Spacing below the heading */
+    color: #ff0066; /* Heading color to match the gradient */
+    font-size: 1.8rem; /* Increased font size for emphasis */
+    text-align: center; /* Centering the heading */
+}
+
+#slot-info {
+    margin: 20px 0; /* Margin around the slot info */
+    font-size: 1.2rem; /* Slightly larger font size for visibility */
+    text-align: center; /* Centering the text */
+    color: #7400b8; /* Slot info color to match the gradient */
+}
+
+/* Button Styles */
+button {
+    font-size: 1.2rem;
+    background-color: #ff0066; /* Button background color */
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Slightly larger padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #7400b8; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .confirm-box {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button size for smaller screens */
+    }
+}

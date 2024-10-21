@@ -1,0 +1,104 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  color: white;
+}
+
+/* Header */
+header .logo {
+  width: 50px;
+  height: 50px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 60vh;
+}
+
+.hero-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1;
+}
+
+.hero-section h2 {
+  font-size: 3rem;
+  color: white;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  color: white;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #212529; /* Dark background to match the theme */
+  padding: 60px 0;
+  color: white; /* Ensure the text is visible on a darker background */
+}
+
+.feature {
+  background-color: #333; /* Dark background for the feature cards */
+  color: white; 
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: #ff007f; /* Consistent with button color */
+}
+
+.feature p {
+  font-size: 1rem;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.features-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+/* Footer */
+footer {
+  background-color: #200024; /* Ensure footer background matches */
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .features-row {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .feature {
+    margin-bottom: 20px;
+  }
+}

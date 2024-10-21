@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRAWN</title>
+  <link rel="icon" href="/static/logo.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="container-fluid bg-dark py-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="/static/logo.png" alt="PRAWN Logo" class="logo">
+        <h1 class="text-white ms-3 mb-0">PRAWN</h1>
+      </div>
+      <button class="btn btn-danger rounded-pill px-4" onclick="window.location.href='/register';">Reserve Now</button>
+    </div>
+  </header>
+
+  <!-- Hero Section with Full-width Image -->
+  <section class="hero-section d-flex justify-content-center align-items-center flex-column text-center text-white">
+    <img src="/static/park.jpg" alt="Hero Background" class="hero-img img-fluid w-100">
+    <div class="overlay-text position-absolute">
+      <h2 class="display-3">PRAWN</h2>
+      <p class="lead fst-italic">Parking Reservation And Wayfinding Network</p>
+    </div>
+  </section>
+
+  <!-- Features Section with Background Image -->
+  <section class="container-fluid features-section text-center text-white py-5" style="background-image: url('/static/features-bg.jpg'); background-size: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="feature p-4 rounded shadow-sm">
+            <h3>Real-Time Availability</h3>
+            <p>Find available parking spots in real time using advanced IoT sensors.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mt-md-0">
+          <div class="feature p-4 rounded shadow-sm">
+            <h3>Advanced Reservations</h3>
+            <p>Reserve your spot in advance and reduce the hassle of searching for parking.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mt-lg-0">
+          <div class="feature p-4 rounded shadow-sm">
+            <h3>Navigation Assistance</h3>
+            <p>Get precise navigation to your reserved parking spot with ease.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 PRAWN - All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
